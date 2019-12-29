@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+
+    <title>Качество</title>
+
+    <link rel="stylesheet" href="../library/bootstrap.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/navbar-mobile.css">
+    <link rel="stylesheet" href="../styles/specifications.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/quality/head.css">
+    <link rel="stylesheet" href="../styles/quality/list.css">
+    <link rel="stylesheet" href="../styles/quality/paragraph.css">
+    <link rel="stylesheet" href="../styles/quality/fullscreen.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,700|Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b42635023.js"></script>
+</head>
+<body id="quality-page">
+
+<nav id="nav">
+    <div class="nav-container">
+        <div class="bar-logo" style="font-weight: 900;">
+            &#9776;
+        </div>
+        <div class="nav-title-container">
+            <div class="nav-logo"></div>
+            <div class="nav-title">КрасПТМ</div>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-menu-point" id="company">
+                О компании<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+                <div class="nav-dop-menu">
+                    <div class="nav-dop-menu-point" id="company-point-1">Point1</div>
+                    <div class="nav-dop-menu-point" id="company-point-2">Point2</div>
+                    <div class="nav-dop-menu-point" id="company-point-3">Point3</div>
+                </div>
+            </div>
+            <div class="nav-menu-point" id="projects">
+                Наши проекты<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+                <div class="nav-dop-menu">
+                    <div class="nav-dop-menu-point" id="projects-point-1">Ямал СПГ</div>
+                    <div class="nav-dop-menu-point" id="projects-point-2">Амурский ГПЗ</div>
+                    <div class="nav-dop-menu-point" id="projects-point-3">Роснефть</div>
+                </div>
+            </div>
+            <div class="nav-menu-point" id="employment">Работа у нас</div>
+            <div class="nav-menu-point" id="quality">Качество</div>
+            <div class="nav-menu-point" id="contacts">Связаться с нами</div>
+        </div>
+        <div class="nav-contacts">
+            <div class="nav-phone">
+                <a href="tel:+79639563666">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
+                </a>
+            </div>
+            <div class="nav-email">
+                <a href="mailto:info@krasptm.ru">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                </a>
+            </div>
+            <div class="nav-lang">
+                <a href="http://localhost:63342/KrasPTM/en">En</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="navbar-mobile">
+    <div class="navbar-mobile-point" id="company-mobile">
+        <div>
+            О компании<svg style="width: 15px; height: 15px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+        </div>
+    </div>
+    <div class="nav-dop-mobile" id="company-dop-mobile">
+        <div class="nav-dop-mobile-point" id="company-mobile-point-1">Point1</div>
+        <div class="nav-dop-mobile-point" id="company-mobile-point-2">Point2</div>
+        <div class="nav-dop-mobile-point" id="company-mobile-point-3">Point3</div>
+    </div>
+    <div class="navbar-mobile-point" id="projects-mobile">
+        <div>
+            Наши проекты<svg style="width: 15px; height: 15px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+        </div>
+    </div>
+    <div class="nav-dop-mobile" id="projects-dop-mobile">
+        <div class="nav-dop-mobile-point" id="projects-mobile-point-1">Ямал СПГ</div>
+        <div class="nav-dop-mobile-point" id="projects-mobile-point-2">Амурский ГПЗ</div>
+        <div class="nav-dop-mobile-point" id="projects-mobile-point-3">Роснефть</div>
+    </div>
+    <div class="navbar-mobile-point" id="employment-mobile"><div>Работа у нас</div></div>
+    <div class="navbar-mobile-point" id="quality-mobile"><div>Качество</div></div>
+    <div class="navbar-mobile-point" id="contacts-mobile"><div>Связаться с нами</div></div>
+</div>
+
+<div id="head">
+    <div class="head-title">
+        О качестве
+    </div>
+    <div class="head-desc">
+        Система менеджмента качества (СМК)
+    </div>
+    <div class="head-line"></div>
+</div>
+
+<div id="list">
+    <div class="list-title">
+        Стратегические цели Общества в области управления качеством:
+    </div>
+    <div class="list-point-container">
+        <div class="list-point">
+            <div class="list-point-text">Производства и реализация продукции, потребителей</div>
+        </div>
+    </div>
+    <div class="list-point-container">
+        <div class="list-point">
+            <div class="list-point-text">Постоянное повышение качества и совершенствование ассортимента продукции и услуг</div>
+        </div>
+    </div>
+    <div class="list-point-container">
+        <div class="list-point">
+            <div class="list-point-text">Непрерывное совершенствование, повышение результативности СМК</div>
+        </div>
+    </div>
+    <div class="list-point-container">
+        <div class="list-point">
+            <div class="list-point-text">Постоянное повышение эффективности деятельности Общества</div>
+        </div>
+    </div>
+</div>
+
+<div class="paragraph" id="paragraph-1">
+    <div class="paragraph-container">
+        <div class="paragraph-img-container">
+            <img src="../images/certificate.jpg" alt="" data-target="#exampleModalCenter">
+        </div>
+        <p>
+            С
+            ноября
+            2016 года Системы менеджмента качества
+            соответствие требованиям международного стандарта ISO 9001:2008 в области производства и
+            сбыта металлоконструкций международным органом по сертификации общества TÜV SÜD
+            Management Service Gmb, известным во всем мире сертификационным органом с более чем 150-
+            летней историей.
+        </p>
+    </div>
+</div>
+
+<div class="paragraph" id="paragraph-2">
+    <div class="paragraph-container">
+        <p>
+            Сертификационный аудит
+            Системы менеджмента качества, а также последующие
+            инспекционный и ре-сертификационный аудиты проводились представителями органа по
+            сертификации
+            TÜV
+            SÜD Management Service GmbH,
+            национальным органом по аккредитации DAkkS (Deutsche Akkreditierungsstelle) на право
+            сертификации по данному стандарту.
+        </p>
+    </div>
+</div>
+
+<div class="paragraph" id="paragraph-3">
+    <div class="paragraph-container">
+        <p>
+            Ежегодно Общество подтверждает надежность функционирующей Системы менеджмента
+            качества, подчеркивая стремление к непрерывному улучшению.
+        </p>
+    </div>
+</div>
+
+<div class="paragraph" id="paragraph-4">
+    <div class="paragraph-container">
+        <p>
+            В декабре 2017 года ООО «КрасПТМ» прошло ре-сертификационный аудит на соответствие
+            обновленной версии стандарта ISO 9001:2015.
+            В рамках совершенствования Системы
+            менеджмента качества c 2017 года в Обществе внедрена система оценки рисков. С 2018 года
+            началась реализация проекта по внедрению инструмента бережливого производства 5S.
+        </p>
+    </div>
+</div>
+
+<div class="paragraph" id="paragraph-5">
+    <div class="paragraph-container">
+        <p>
+            Аудиторы отметили высокий уровень организации и функционирования Системы, а также
+            значительную степень вовлеченности персонала в достижение поставленных целей.
+        </p>
+    </div>
+</div>
+
+<div class="fullscreen-certificate">
+    <div class="image-certificate">
+        <img src="../images/certificate.jpg" alt="">
+    </div>
+</div>
+
+<div id="footer">
+    <div class="footer-menu">
+        <div class="footer-menu-point" id="footer-company">
+            <div class="footer-menu-point-word">Компания</div>
+            <div class="footer-dop-menu">
+                <div class="footer-dop-menu-point">Point1</div>
+                <div class="footer-dop-menu-point">Point2</div>
+                <div class="footer-dop-menu-point">Point3</div>
+            </div>
+        </div>
+        <div class="footer-menu-point" id="footer-projects">
+            <div class="footer-menu-point-word">Проекты</div>
+            <div class="footer-dop-menu">
+                <div class="footer-dop-menu-point" id="footer-projects-1">Ямал СПГ</div>
+                <div class="footer-dop-menu-point" id="footer-projects-2">Амурский ГПЗ</div>
+                <div class="footer-dop-menu-point" id="footer-projects-3">Роснефть</div>
+            </div>
+        </div>
+        <div class="footer-menu-point" id="footer-employment">
+            <div class="footer-menu-point-word">Вакансии</div>
+        </div>
+        <div class="footer-menu-point" id="footer-quality">
+            <div class="footer-menu-point-word">Качество</div>
+        </div>
+        <div class="footer-menu-point" id="footer-contacts">
+            <div class="footer-menu-point-word">Контакты</div>
+        </div>
+    </div>
+    <div class="footer-logo">
+    </div>
+    <div class="footer-phone">
+        8 963 956 36 66
+    </div>
+    <div class="footer-email">
+        info@krasptm.ru
+    </div>
+    <div class="footer-rights">
+        &copy; ООО "КрасПТМ".  Все права защищены. <span>Политика</span> и <span>Пользовательское соглашение</span>.
+    </div>
+</div>
+
+<script src="../library/jquery-3.4.1.js"></script>
+<script src="../library/bootstrap.min.js"></script>
+<script src="../library/bootstrap.bundle.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../scripts/navbar.js"></script>
+<script src="../scripts/redirect.js"></script>
+<script src="../scripts/menu1.js"></script>
+<script src="../scripts/mobile-menu.js"></script>
+<script src="../scripts/quality/certificate.js"></script>
+</body>
+</html>

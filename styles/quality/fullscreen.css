@@ -1,0 +1,22 @@
+.fullscreen-certificate{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 150;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-certificate img{
+    height: 80vh;
+}
+@media(max-width: 500px){
+    .image-certificate img{
+        height: auto;
+        width: 80vw;
+    }
+}

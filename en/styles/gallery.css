@@ -1,0 +1,130 @@
+.gallery{
+    width: 100%;
+    height: calc(100vw / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.gallery-photo{
+    width: 25%;
+    height: 50%;
+}
+.gallery-photo-content{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(19,43,117,0.95), rgba(67,107,224,0.8));
+    opacity: 0;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.gallery-photo:hover .gallery-photo-content{
+    opacity: 1;
+    cursor: pointer;
+}
+.gallery-photo-title{
+    width: 80%;
+    color: #6fa6da;
+    font-size: 20px;
+    font-weight: 500;
+}
+.gallery-photo-description{
+    width: 80%;
+    color: white;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#gp1{
+    background: url("../images/gallery-1.jpg") center;
+    background-size: cover;
+}
+#gp2{
+    background: url("../images/gallery-2.jpg") center;
+    background-size: cover;
+}
+#gp3{
+    background: url("../images/gallery-3.jpg") center;
+    background-size: cover;
+}
+#gp4{
+    background: url("../images/gallery-4.jpg") center;
+    background-size: cover;
+}
+#gp5{
+    background: url("../images/gallery-5.jpg") center;
+    background-size: cover;
+}
+#gp6{
+    background: url("../images/gallery-6.jpg") center;
+    background-size: cover;
+}
+#gp7{
+    background: url("../images/gallery-7.jpg") center;
+    background-size: cover;
+}
+#gp8{
+    background: url("../images/gallery-8.jpg") center;
+    background-size: cover;
+}
+@media(max-width: 1200px){
+    .gallery{
+        height: 100vw;
+        flex-direction: row-reverse;
+    }
+    .gallery-photo{
+        height: 35%;
+        width: calc(100% / 3);
+    }
+    #gp4, #gp5{
+        height: 30%;
+        width: 50%;
+    }
+}
+@media(max-width: 900px){
+    .gallery{
+        height: calc(100vw * 2);
+    }
+    .gallery-photo{
+        height: 25%;
+        width: 50%;
+    }
+    #gp4, #gp5{
+        height: 25%;
+        width: 50%;
+    }
+}
+@media(max-width: 600px){
+    .gallery{
+        height: calc(100vw * 3);
+    }
+    .gallery-photo{
+        height: 18%;
+        width: 50%;
+    }
+    #gp3, #gp6{
+        height: 23%;
+        width: 100%;
+    }
+    #gp4, #gp5{
+        height: 18%;
+        width: 50%;
+    }
+    .gallery-photo-title{
+        font-size: 13px;
+        width: 100%;
+    }
+    .gallery-photo-description{
+        font-size: 11px;
+    }
+}

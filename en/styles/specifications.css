@@ -1,0 +1,113 @@
+.specifications{
+    width: 100%;
+    height: 400px;
+    background: white;
+}
+.spec-container{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+.spec-container-1{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.spec-point{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.spec-point svg{
+    width: 75px;
+    height: 75px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.spec-logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spec-point rect, .spec-point path{
+    fill: #26223f;
+}
+.spec-title{
+    width: 275px;
+    height: 75px;
+    font-size: 20px;
+    color: #26223f;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+.spec-content{
+    width: 275px;
+    height: 150px;
+    padding-top: 10px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #332e53;
+    text-align: center;
+}
+.spec-line{
+    width: 75px;
+    height: 2px;
+    border-bottom: 2px #ccccff solid;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.spec-point:hover{
+    background: #afd1ed;
+}
+.spec-point:hover .spec-line{
+    border-bottom: 2px #332e53 solid;
+}
+.spec-point:hover svg{
+    width: 100px;
+    height: 100px;
+}
+@media(max-width: 1200px){
+    .spec-container{
+        width: 100%;
+    }
+    .spec-container-1{
+        width: 800px;
+    }
+    .specifications{
+        height: 800px;
+    }
+
+}
+@media(max-width: 600px) {
+    .spec-container-1{
+        height: 800px;
+        width: 100%
+    }
+    .specifications{
+        height: 1600px;
+    }
+}

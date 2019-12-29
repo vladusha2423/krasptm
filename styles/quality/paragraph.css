@@ -1,0 +1,80 @@
+.paragraph{
+    width: 100%;
+    background: #3B69AF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+.paragraph-container{
+    margin: auto;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.paragraph p{
+    width: 1000px;
+    text-indent: 30px;
+}
+#paragraph-1 p{
+    width: 800px;
+}
+#paragraph-1 img{
+    width: 150px;
+    border: 2px #80bdff solid;
+    border-radius: 3px;
+}
+#paragraph-1 img:hover{
+    cursor: pointer;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+}
+.paragraph-img-container{
+    margin-right: 20px;
+    background: #3B69AF;
+    border-radius: 3px;
+}
+#paragraph-3 .paragraph-container, #paragraph-5 .paragraph-container{
+    padding-left: 200px;
+}
+#paragraph-2 .paragraph-container, #paragraph-4 .paragraph-container{
+
+}
+#paragraph-1, #paragraph-3, #paragraph-5{
+    color: #26223F;
+    background: rgb(220,240,255);
+}
+#paragraph-2, #paragraph-4{
+    color: #26223F;
+    background: white;
+}
+@media(max-width: 1200px){
+    .paragraph-container{
+        width: 100%;
+    }
+    .paragraph p{
+        width: 80%;
+        text-indent: 2.5%;
+    }
+    #paragraph-1 p{
+        width: calc(100% - 200px);
+    }
+    .paragraph-img-container{
+        margin-right: 1.6%;
+    }
+    #paragraph-3 .paragraph-container, #paragraph-5 .paragraph-container{
+        padding-left: 16%;
+    }
+}
+@media(max-width: 500px){
+    .paragraph-container{
+        flex-direction: column;
+    }
+    #paragraph-1 p{
+        width: 80%;
+    }
+}

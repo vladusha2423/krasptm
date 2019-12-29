@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    background: white;
+}
+A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+A:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,223 @@
+nav a{
+    color: azure;
+}
+nav a:hover{
+    color: azure;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background: #d7e7f7;
+    color: #26223f;
+    z-index: 100;
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+#nav{
+    margin-top: -100px;
+}
+.nav-container{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title-container{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-title-container:hover{
+    cursor: pointer;
+}
+.nav-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-logo{
+    background: url("../images/new_logo.png");
+    width: 100px;
+    height: 86px;
+}
+.nav-menu{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+}
+.nav-menu-point{
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nav-menu-point svg{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 2px;
+}
+.nav-menu-point:hover{
+    color: #3764ac;
+    cursor: pointer;
+}
+.nav-contacts{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: azure;
+    padding-right: 10px;
+}
+.nav-phone, .nav-email, .nav-lang{
+    width: 50px;
+    height: 50px;
+    background: #26223f;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nav-phone svg, .nav-email svg{
+    width: 25px;
+    height: 25px;
+}
+.nav-phone, .nav-lang{
+    background: #3764ac;
+}
+.nav-lang{
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-phone:hover, .nav-email:hover, .nav-lang:hover{
+    background: #3764ac;
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.nav-phone:hover, .nav-email:hover{
+    padding-bottom: 3px;
+}
+.nav-phone:hover svg, .nav-email:hover svg{
+    width: 27px;
+    height: 27px;
+}
+.nav-phone:hover, .nav-lang:hover{
+    background: #82b5e8;
+}
+.nav-contacts path{
+    fill: white;
+}
+.bar-logo{
+    display: none;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.nav-dop-menu{
+    display: none;
+    position: fixed;
+    z-index: 150;
+    width: 150px;
+    background: #f0f8ff;
+    border: 1px #c5d0e6 solid;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    opacity: 0;
+}
+.nav-dop-menu.menu-active{
+    display: block;
+}
+.nav-dop-menu-point{
+    height: 30px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 3px;
+    color: #26223f;
+
+}
+.nav-dop-menu-point:hover{
+    background: #dcebf7;
+    cursor: pointer;
+}
+@media(max-width: 1200px){
+    .nav-container{
+        width: 100%;
+    }
+}
+@media(max-width: 1100px){
+    .nav-title{
+        font-size: 25px;
+    }
+    .nav-logo{
+        background-size: cover;
+        width: 75px;
+        height: 65px;
+    }
+    .nav-menu{
+        font-size: 15px;
+    }
+    .nav-phone, .nav-email, .nav-lang{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        padding-bottom: 1px;
+    }
+    .nav-contacts svg{
+        width: 20px;
+        height: 20px;
+    }
+    .nav-contacts{
+        width: 150px;
+        padding-right: 10px;
+    }
+    .nav-phone:hover, .nav-email:hover, .nav-lang:hover{
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        font-size: 21px;
+        padding-bottom: 2px;
+
+    }
+    .nav-phone:hover svg, .nav-email:hover svg, .nav-lang:hover svg{
+        width: 22px;
+        height: 22px;
+    }
+
+}
+@media(max-width: 1000px){
+    .bar-logo{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+}
+@media(max-width: 900px){
+    nav{
+        height: 60px;
+    }
+    #nav{
+        margin-top: -60px;
+    }
+    .nav-logo{
+        width: 50px;
+        height: 43px;
+    }
+}
